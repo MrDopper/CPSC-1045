@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Number Example</title>
+</head>
+
+<body>
+
+    <!-- Button that will trigger the JavaScript function -->
+    <button id="clickMeButton">Click Me to Enter a Number</button>
+
+    <!-- Paragraph to display the entered number -->
+    <p id="displayNumber"></p>
+
+    <script>
+        //Function to be called when the button is clicked
+        function handleClick() {
+            // Prompt the user to enter a number
+            let numberInput = prompt("Please enter a number:");
+
+            // Convert the input to a number
+            let number = Number(numberInput);
+
+            // Check if the input is a valid number
+            if (!isNaN(number)) {
+                document.getElementById("displayNumber").innerText = "You entered the number: " + number;
+            } else {
+                document.getElementById("displayNumber").innerText = "That is not a valid number.";
+            }
+        }
+
+        // Add an event listener to the button that triggers the handleClick function on click
+        document.getElementById("clickMeButton").addEventListener("click", handleClick);
+
+        console.log(3 > "3birds");
+
+    </script>
+
+</body>
+
+</html>

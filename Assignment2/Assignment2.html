@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="answerHere">
+        <!-- leave this block empty, your JavaScript program will fill it for you-->
+    </div>
+
+    <script>
+        // write your code here, target the div above for filling your answer
+        // concatenation is key to produce the answer
+        const minScoreToPass = 60;
+        let currentScore = Math.floor(Math.random() * 59) + 1;
+        let pointsNeeded = minScoreToPass - currentScore;
+        document.getElementById("answerHere").innerHTML = "CPSC-1045 needs a minimum score of 60 points to pass. Erwin currently has " + currentScore + " points, hence he needs " + pointsNeeded + " more points to pass the course.";
+
+    </script>
+</body>
+
+</html>

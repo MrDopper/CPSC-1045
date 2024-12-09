@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <style>
+        canvas {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CPSC 1045 - Assignment 6</h1>
+    <div>
+        <label for="rows">PLease select the numbers of rows between 1-100:</label>
+        <input type="number" id="rows" min="0" max="100"><br>
+        <label for="columns">PLease select the numbers of columns between 1-100:</label>
+        <input type="number" id="columns" min="0" max="100"><br>
+    </div>
+    <div>
+        <button id="submision">Generate rhombuses</button>
+        <span id="errorMessage" style="color:red"></span>
+    </div>
+    <br><canvas id="myCanvas" height="50" width="50"></canvas>
+    <script src="scripts/pattern.js" type="text/javascript"></script>
+</body>
+
+</html>

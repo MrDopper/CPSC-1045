@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #displayBox {
+        border: 2px solid lightblue;
+    }
+
+    #displayBox p {
+        padding-left: 40px;
+    }
+</style>
+
+<body>
+    <h1>
+        Conference Attendees
+    </h1>
+    <div>
+        <p>
+            Let's Validate this form
+        </p>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName"> <br> <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName"><br><br>
+        <label for="E-mail">E-mail:</label>
+        <input type="text" id="E-mail"> <br><br>
+        <label for="company">Company:</label>
+        <input type="text" id="company">
+    </div>
+    <button id="add">
+        Add it
+    </button>
+    <div id="displayBox">
+        <p>List of attendees</p>
+        <ul id="attendeeList">
+        </ul>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

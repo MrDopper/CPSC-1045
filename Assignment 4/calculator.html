@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calculator v1</title>
+    <script src="scripts/calcV1.js"></script>
+</head>
+<style>
+    #errorMessage {
+        padding-top: 5px;
+        color: crimson;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>
+            Assignment 4 - "The Calculator v1"
+        </h1>
+    </header>
+    <main>
+        <input type="text" id="firstInput">
+        <button type="button" id="add">+</button>
+        <button type="button" id="substract">-</button>
+        <button type="button" id="multiply">*</button>
+        <button type="button" id="divide">/</button>
+        <button type="button" id="remainder">%</button>
+        <input type="text" id="secondInput"> = <input type="text" id="result" disabled>
+        <br>
+        <div id="errorMessage">
+            <!-- This is the errors display area-->
+        </div>
+        <button id="reset">Reset</button>
+
+    </main>
+
+</body>
+
+</html>

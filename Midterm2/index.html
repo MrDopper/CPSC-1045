@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #errorMessage {
+        color: red;
+    }
+
+    #found {
+        color: green;
+    }
+</style>
+
+<body>
+    <h1>
+        This is the pratice for midterm 2
+    </h1>
+    <div>
+        <label for="stringName">Enter a string: </label>
+        <input type="text" id="stringName" placeholder="PLease enter a word or a sentece"> <br>
+        <label for="findWords">Enter a word you want to find in the string: </label>
+        <input type="text" id="findWords" placeholder="Enter a word">
+        <label for="arrayNumber">Enter an array</label>
+        <input type="text" id="arrayNumber" placeholder="Enter an array of number">
+        
+    </div>
+    <div>
+        <button id="submit" disabled>Submit</button>
+    </div>
+    <div>
+        <span id="errorMessage"></span>
+        <span id="found"></span>
+    </div>
+    <script src="testCase.js"></script>
+</body>
+
+</html>
